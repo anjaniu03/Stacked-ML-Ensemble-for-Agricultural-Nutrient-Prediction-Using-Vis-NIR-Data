@@ -6,7 +6,7 @@
 
 **Supervisor**: Felipe Campelo
 
-Agriculture increasingly depends on data — but laboratory soil testing is slow and expensive. This project focuses on predicting soil and plant nutrient concentrations using Visible-Near Infrared (Vis-NIR) Spectral Data, developed as part of the MSc Data Science Mini Project at the University of Bristol (in collaboration with Dalhousie University). Our group decided to design a stacked ensemble machine learning model capable of estimating multiple nutrient levels while tackling the challenges of noisy, high dimensional and incomplete data and improving predictive accuracy across diverse seasonal agricultural datasets.
+Agriculture increasingly depends on data, but laboratory soil testing is slow and expensive. This project focuses on predicting soil and plant nutrient concentrations using Visible-Near Infrared (Vis-NIR) Spectral Data, developed as part of the MSc Data Science Mini Project at the University of Bristol (in collaboration with Dalhousie University). Our group decided to design a stacked ensemble machine learning model capable of estimating multiple nutrient levels while tackling the challenges of noisy, high dimensional and incomplete data and improving predictive accuracy across diverse seasonal agricultural datasets.
 
 **Key Questions**:
 1. How can we extract meaningful insights from 4,200+ spectral features per sample?
