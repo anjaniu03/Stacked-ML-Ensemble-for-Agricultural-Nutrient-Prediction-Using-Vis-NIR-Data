@@ -1,35 +1,36 @@
 # Stacked-ML-Ensemble-for-Agricultural-Nutrient-Prediction-Using-Vis-NIR-Data
 
-Developed by Team T14, MSc Data Science, University of Bristol
+**Author**: Anjani Upadhyay, Hangwei Pu, Sahana Somani, Shaoshuai Li
 
-This project focuses on predicting soil and plant nutrient concentrations using Visible-Near Infrared (Vis-NIR) Spectral Data, developed as part of the MSc Data Science Mini Project at the University of Bristol (in collaboration with Dalhousie University). The goal was to design a stacked ensemble machine learning model capable of estimating multiple nutrient levels while reducing high spectral dimensionality and improving predictive accuracy across diverse agricultural datasets.
+**Degree**: MSc Data Science, University of Bristol (2024–2025)
 
-**Key Contributions**:
-1. Data Cleaning & Imputation: Addressed missing nutrient values (e.g., Boron, Chloride, Aluminum) using XGBoost-based imputation and mean substitution, ensuring complete and reliable datasets.
-2. Dimensionality Reduction: Applied Partial Least Squares (PLS) and feature binning (8nm window) to reduce over 4,200 spectral features to ~260, improving computational efficiency.
-3. Model Development: Implemented Lasso Regression, Random Forest and XGBoost to predict nutrient concentrations, later combining them via a stacked ensemble framework for enhanced performance.
+**Supervisor**: Felipe Campelo
 
-Evaluation Metrics: Used R² Score, RPD (Ratio of Performance to Deviation) and NRMSE to assess model performance across datasets.
-Performance Highlights: Achieved up to 80% prediction accuracy for key nutrients, with a 25% improvement in RMSE following dimensionality optimization.
+Agriculture increasingly depends on data — but laboratory soil testing is slow and expensive.This project focuses on predicting soil and plant nutrient concentrations using Visible-Near Infrared (Vis-NIR) Spectral Data, developed as part of the MSc Data Science Mini Project at the University of Bristol (in collaboration with Dalhousie University). Our group decided to design a stacked ensemble machine learning model capable of estimating multiple nutrient levels while tackling the challenges of noisy, high dimensional and incomplete data and improving predictive accuracy across diverse seasonal agricultural datasets.
 
-Methodology:
-Data Preprocessing: Normalization, handling missing data, and dataset merging.
-Feature Reduction: PCA evaluation followed by optimized PLS for meaningful spectral compression.
-Model Training: Ensemble of regression algorithms with hyperparameter tuning using FLAML’s CASH framework.
-Stacking & Validation: Integrated predictions of related nutrients (N, P, K) to improve generalization.
+**Key Questions**:
+1. How can we extract meaningful insights from 4,200+ spectral features per sample?
+2. Can machine learning be used to replace or at least support traditional laboratory nutrient testing?
+3. What modelling strategies can improve accuracy when datasets have missing or inconsistent values?
+4. Is it possible to build a stacking pipeline to predict multiple nutrients from fresh/dried modes at once?
 
-Results Summary:
-XGBoost consistently outperformed other models on 5 out of 7 datasets.
-Stacked ensemble approach improved predictive robustness across different seasons (Dry vs. Fresh).
-Demonstrated feasibility of AI-driven soil nutrient prediction to support data-informed agricultural decisions.
+**Supporting Technologies**:
+1. Core Programming & Data Analysis (Python) - Pandas, NumPy, Matplotlib, Seaborn
+2. Machine Learning & AutoML - Scikit-learn, XGBoost, LightGBM, FLAML
+3. Development & Collaboration - Jupyter Notebooks, Google Colaboratory, LaTeX (via Overleaf), GitHub, PowerPoint
 
-Tech Stack:
-Languages: Python
-Libraries: Pandas, NumPy, Scikit-learn, XGBoost, FLAML, Matplotlib
-Tools: Jupyter Notebook, Git, PowerPoint (presentation/reporting)
+**Methodology**:
 
-Future Work:
-Explore heterogeneous stacking using deep learning base learners.
-Experiment with autoencoder-based spectral feature extraction.
-Incorporate environmental metadata (e.g., temperature, soil type) to enhance model generalization.
+1. Data Preprocessing: Cleaned and merged multiple “Fresh” and “Dry” season datasets, addressed missing nutrient values (e.g. Boron, Chloride, Aluminum) using XGBoost based imputation and mean substitution, ensuring complete and reliable datasets.
+2. Dimensionality Reduction: Reduced 4,200 spectral features to 263 using feature binning (8nm window) and Partial Least Squares (PLS) improving interpretability and reducing noise.
+3. Model Training: Trained and compared Lasso, ElasticNet, Random Forest and XGBoost models, tuning hyperparameters automatically using FLAML’s CASH optimisation framework.
+4. Stacked Ensemble: Combined the best performing models into a stacked regression ensemble to integrated predictions of related nutrients, boosting generalisation and minimising R² Score, RPD and NRMSE.
 
+**Results & Insights**:
+
+1. Achieved up to 80% accuracy for key nutrient predictions (e.g. Nitrogen, Phosphorus, Potassium).
+2. RMSE improved by 25% after dimensionality reduction and imputation optimisation.
+3. XGBoost consistently outperformed other algorithms across 5 of 7 datasets, but ensemble learning offered greater robustness across seasons (Dry vs. Fresh).
+4. Demonstrated feasibility of using machine learning in soil nutrient prediction to support data-informed agricultural decisions.
+
+Working with real agricultural data showed how much of data science lies in cleaning, transforming and validating messy inputs. The biggest takeaway? Even small improvements in model accuracy can translate into real world value for farmers, enabling faster and more sustainable soil monitoring.
