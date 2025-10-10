@@ -1,6 +1,6 @@
 # Stacked-ML-Ensemble-for-Agricultural-Nutrient-Prediction-Using-Vis-NIR-Data
 
-**Author**: Anjani Upadhyay, Hangwei Pu, Sahana Somani, Shaoshuai Li
+**The Team**: Anjani Upadhyay, Hangwei Pu, Sahana Somani, Shaoshuai Li
 
 **Degree**: MSc Data Science, University of Bristol (2024–2025)
 
