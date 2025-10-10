@@ -9,15 +9,15 @@
 Agriculture increasingly depends on data, but laboratory soil testing is slow and expensive. This project focuses on predicting soil and plant nutrient concentrations using Visible-Near Infrared (Vis-NIR) Spectral Data, developed as part of the MSc Data Science Mini Project at the University of Bristol (in collaboration with Dalhousie University). Our group decided to design a stacked ensemble machine learning model capable of estimating multiple nutrient levels while tackling the challenges of noisy, high dimensional and incomplete data and improving predictive accuracy across diverse seasonal agricultural datasets.
 
 ### Key Questions:
-1. How can we extract meaningful insights from 4,200+ spectral features per sample?
-2. Can machine learning be used to replace or at least support traditional laboratory nutrient testing?
-3. What modelling strategies can improve accuracy when datasets have missing or inconsistent values?
-4. Is it possible to build a stacking pipeline to predict multiple nutrients from fresh/dried modes at once?
+* How can we extract meaningful insights from 4,200+ spectral features per sample?
+* Can machine learning be used to replace or at least support traditional laboratory nutrient testing?
+* What modelling strategies can improve accuracy when datasets have missing or inconsistent values?
+* Is it possible to build a stacking pipeline to predict multiple nutrients from fresh/dried modes at once?
 
 ### Supporting Technologies:
-* **Core Programming & Data Analysis (Python)** - Pandas, NumPy, Matplotlib, Seaborn
-* **Machine Learning & AutoML** - Scikit-learn, XGBoost, LightGBM, FLAML
-* **Development & Collaboration** - Jupyter Notebooks, Google Colaboratory, LaTeX (via Overleaf), GitHub, PowerPoint
+1. **Core Programming & Data Analysis (Python)** - Pandas, NumPy, Matplotlib, Seaborn
+2. **Machine Learning & AutoML** - Scikit-learn, XGBoost, LightGBM, FLAML
+3. **Development & Collaboration** - Jupyter Notebooks, Google Colaboratory, LaTeX (via Overleaf), GitHub, PowerPoint
 
 ### Methodology:
 
