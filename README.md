@@ -19,14 +19,14 @@ Agriculture increasingly depends on data, but laboratory soil testing is slow an
 * **Machine Learning & AutoML** - Scikit-learn, XGBoost, LightGBM, FLAML
 * **Development & Collaboration** - Jupyter Notebooks, Google Colaboratory, LaTeX (via Overleaf), GitHub, PowerPoint
 
-**Methodology**:
+### Methodology:
 
 1. **Data Preprocessing**: Cleaned and merged multiple “Fresh” and “Dry” season datasets, addressed missing nutrient values (e.g. Boron, Chloride, Aluminum) using XGBoost based imputation and mean substitution, ensuring complete and reliable datasets.
 2. **Dimensionality Reduction**: Reduced 4,200 spectral features to 263 using feature binning (8nm window) and Partial Least Squares (PLS) improving interpretability and reducing noise.
 3. **Model Training**: Trained and compared Lasso, ElasticNet, Random Forest and XGBoost models, tuning hyperparameters automatically using FLAML’s CASH optimisation framework.
 4. **Stacked Ensemble**: Combined the best performing models into a stacked regression ensemble to integrated predictions of related nutrients, boosting generalisation and minimising R² Score, RPD and NRMSE.
 
-**Results & Insights**:
+### Results & Insights:
 
 * Achieved up to 80% accuracy for key nutrient predictions (e.g. Nitrogen, Phosphorus, Potassium).
 * RMSE improved by 25% after dimensionality reduction and imputation optimisation.
