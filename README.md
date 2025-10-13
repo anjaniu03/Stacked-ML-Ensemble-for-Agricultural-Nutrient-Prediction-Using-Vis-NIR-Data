@@ -1,4 +1,4 @@
-# Stacked-ML-Ensemble-for-Agricultural-Nutrient-Prediction-Using-Vis-NIR-Data
+# Multiple-Nutrient-Sensing-for-Smart-Agriculture
 
 **The Team**: Anjani Upadhyay, Hangwei Pu, Sahana Somani, Shaoshuai Li
 
